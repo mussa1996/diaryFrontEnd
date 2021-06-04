@@ -61,6 +61,7 @@ export const updateTodo = (id,credentials) =>dispatch=> {
     dispatch({
         type: UPDATE_TODO_REQUEST
      })
+     
       return axios.patch(`http://localhost:3000/api/diary/${id}`,credentials, {
          headers: {
              Authorization: `Bearer ${token}`
